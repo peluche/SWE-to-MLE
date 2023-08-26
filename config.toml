@@ -34,6 +34,30 @@ theme = 'loveit'
 		name = "Categories"
 		url = "/categories/"
 		title = ""
+	[[menu.main]]
+    weight = 4
+    identifier = "about"
+    pre = ""
+    post = ""
+    name = "About"
+    url = "/about/"
+    title = ""
+	[[menu.main]]
+    weight = 5
+    identifier = "hire-me"
+    pre = ""
+    post = ""
+    name = "Hire Me"
+    url = "/hire-me/"
+    title = ""
+  [[menu.main]]
+    weight = 6
+    identifier = "github"
+    pre = "<i class='fab fa-github fa-fw' aria-hidden='true'></i>"
+    post = ""
+    name = ""
+    url = "https://github.com/peluche/SWE-to-MLE"
+    title = "GitHub"
 
 [markup]
 	[markup.highlight]
