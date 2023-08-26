@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://swe-to-mle.pages.dev'
 languageCode = 'en'
 languageName = "English"
 title = 'SWE to ML Engineer'
@@ -59,10 +59,9 @@ theme = 'loveit'
 
   [params.app]
     title = "SWE to ML Engineer"
-    svgFavicon = "" # TODO
 
   [params.search]
-    enable = true # TODO
+    enable = false # TODO
 
   [params.home]
     [params.home.profile]
@@ -94,4 +93,3 @@ theme = 'loveit'
         label = ""
         lightTheme = "github-light"
         darkTheme = "github-dark"
-

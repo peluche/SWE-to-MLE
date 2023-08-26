@@ -7,7 +7,7 @@ authorLink: "https://github.com/peluche"
 description: "Basic setup to experiment with learning in public."
 resources:
 - name: "cloudflare-web-analytics"
-  src: "web-analytics.png"
+  src: "cfwa.png"
 - name: "auto-deployment"
   src: "auto-deployment.png"
 tags: ["github", "hugo", "loveit", "cloudflare", "utterances"]
@@ -51,7 +51,7 @@ git push origin main
 
 Register an account with cloudflare https://pages.cloudflare.com/ and give it access to your GitHub repo. Now, the code will get picked up automatically when you push, and you don't have to manage anything. There's also a oneclick option to enable analytics.
 
-![oneclick web analytics](web-analytics.png "Oneclick Web Analytics")
+![oneclick web analytics](cfwa.png "Oneclick Web Analytics")
 
 Now, to setup some comments, we're using https://utteranc.es/. It stores comments as issues on GitHub. Give permission to the [Utterances app](https://github.com/apps/utterances) to your repo and add the info to your `config.toml`.
 
