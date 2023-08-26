@@ -1,5 +1,5 @@
 baseURL = 'http://example.org/'
-languageCode = 'en-us'
+languageCode = 'en'
 languageName = "English"
 title = 'SWE to ML Engineer'
 theme = 'loveit'
@@ -55,7 +55,7 @@ theme = 'loveit'
 
   [params.section]
     paginate = 20
-    dateFormat = "2022-01-02"
+    dateFormat = "01-02"
 
   [params.app]
     title = "SWE to ML Engineer"
@@ -76,11 +76,10 @@ theme = 'loveit'
       enable = true
       paginate = 6
 
-	[params.social]
+  [params.social]
 		GitHub = "peluche"
 		Email = "contact@peluche.me"
 		RSS = true
-
 
   [params.page]
     [params.page.toc]
@@ -90,9 +89,9 @@ theme = 'loveit'
       enable = true
       [params.page.comment.utterances]
         enable = true
-        # owner/repo
         repo = "peluche/SWE-to-MLE"
         issueTerm = "pathname"
         label = ""
         lightTheme = "github-light"
         darkTheme = "github-dark"
+
