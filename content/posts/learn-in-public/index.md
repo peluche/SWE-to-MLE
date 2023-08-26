@@ -14,8 +14,6 @@ tags: ["github", "hugo", "loveit", "cloudflare", "utterances"]
 categories: ["Update"]
 ---
 
-# Learn in Public
-
 This is the start of an experiment. There's an internet theory that you can learn faster about any topic if you learn it in public [source](https://www.swyx.io/learn-in-public).
 
 So I'm going to be rambling in here while I transition from Software Engineer to ML Engineer.
