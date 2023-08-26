@@ -1,4 +1,98 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+languageName = "English"
+title = 'SWE to ML Engineer'
 theme = 'loveit'
+
+[author]
+  name = "peluche"
+  email = "contact@peluche.me"
+  link = ""
+
+[menu]
+	[[menu.main]]
+		weight = 1
+		identifier = "posts"
+		pre = ""
+		post = ""
+		name = "Posts"
+		url = "/posts/"
+		title = ""
+	[[menu.main]]
+		weight = 2
+		identifier = "tags"
+		pre = ""
+		post = ""
+		name = "Tags"
+		url = "/tags/"
+		title = ""
+	[[menu.main]]
+		weight = 3
+		identifier = "categories"
+		pre = ""
+		post = ""
+		name = "Categories"
+		url = "/categories/"
+		title = ""
+
+[markup]
+	[markup.highlight]
+	noClasses = false
+
+[params]
+	title = "SWE to ML Engineer"
+	description = "Journey from a Software Enginner (SWE) to a Machine Learning Engineer (MLE)."
+
+	[params.header]
+		[params.header.title]
+			logo = ""
+			name = "SWE to ML Engineer"
+			typeit = false
+
+	[params.footer]
+    enable = true
+		since = 2023
+
+  [params.section]
+    paginate = 20
+    dateFormat = "2022-01-02"
+
+  [params.app]
+    title = "SWE to ML Engineer"
+    svgFavicon = "" # TODO
+
+  [params.search]
+    enable = true # TODO
+
+  [params.home]
+    [params.home.profile]
+      enable = true
+      gravatarEmail = "gravatar@peluche.me"
+      subtitle = "Welcome to my journey from SWE to ML Engineer"
+      typeit = true
+      social = true
+			
+    [params.home.posts]
+      enable = true
+      paginate = 6
+
+	[params.social]
+		GitHub = "peluche"
+		Email = "contact@peluche.me"
+		RSS = true
+
+
+  [params.page]
+    [params.page.toc]
+      enable = true
+
+    [params.page.comment]
+      enable = true
+      [params.page.comment.utterances]
+        enable = true
+        # owner/repo
+        repo = "peluche/SWE-to-MLE"
+        issueTerm = "pathname"
+        label = ""
+        lightTheme = "github-light"
+        darkTheme = "github-dark"
