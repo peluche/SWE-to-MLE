@@ -102,6 +102,7 @@ theme = 'loveit'
   [params.social]
 		GitHub = "peluche"
 		Email = "contact@peluche.me"
+		Goodreads = "90439302-peluche"
 		RSS = true
 
   [params.page]
