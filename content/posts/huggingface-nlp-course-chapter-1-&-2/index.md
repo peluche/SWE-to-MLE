@@ -15,7 +15,7 @@ categories: ['learning']
 Today is time for the [🤗 Hugging Face: NLP Course](https://huggingface.co/learn/nlp-course).
 
 ## Chapter 1: Transformer Models
-The first chapter is just a very quick glande at Hugging Face transformer capabilities. It's a rapidfire set of examples going through two-liners for:
+The first chapter is just a very quick glance at Hugging Face transformer capabilities. It's a rapidfire set of examples going through two-liners for:
 - sentiment analysis
 - NER (entity extraction)
 - classification
