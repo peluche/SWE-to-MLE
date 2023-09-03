@@ -1,5 +1,5 @@
 ---
-title: "Huggingface Nlp Course Chapter 3 to 5"
+title: "Huggingface NLP Course Chapter 3 to 5"
 date: 2023-09-02T19:23:41+02:00
 draft: false
 author: "peluche"
