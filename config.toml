@@ -52,6 +52,14 @@ theme = 'loveit'
     title = ""
   [[menu.main]]
     weight = 6
+    identifier = "grimoire"
+    pre = "<i class='fas fa-book-skull fa-fw' aria-hidden='true'></i>"
+    post = ""
+    name = "Grimoire"
+    url = "/grimoire/"
+    title = "Grimoire"
+  [[menu.main]]
+    weight = 7
     identifier = "github"
     pre = "<i class='fab fa-github fa-fw' aria-hidden='true'></i>"
     post = ""
