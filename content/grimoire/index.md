@@ -31,9 +31,15 @@ ${n \over \sum {1 \over x}} = ({\sum{1 \over x} \over n})^{-1}$. Used when deali
 ## Logit
 LOGistic unIT. Some raw value converted into a proba (see [softmax](#softmax)). E.g. an image classifier output layer is a vector of logit
 
+## LoRA
+Low Rank Adaptation (LoRA) is a [PEFT](#peft). It's used to fine tune a large model while only touching a minimal amount of weights. In practice it emulates a `[N, M]` matrice, by using two `[N, k] @ [k, M]` matricies as a proxy. The insight is that matrices information is sparse and similar results can be used with fewer dimentions, it's a form of dimention reduction.
+
 ## NER
 Named entity recognition -
 Mark each word in a sentence as corresponding to a particular entity (such as persons, locations, or organizations, etc.) or "no entity".
+
+## PEFT
+Parameter Efficient Fine Tuning (PEFT) is an umbrella term for methods of fine tuning preventing to touch the entirety of the model weights (e.g. [LoRA](#lora)).
 
 ## Perplexity
 $PPL(X) = P(X_1 X_2 ... X_N)^{-{1 \over N}}$ metric (kinda bad one) to measure the performance of language model (the lower the value, the better the perf). Perplexity is analog to the branching factor normalized by the length of the sequence. Say we guess a `N` digits number, all digits have equal probability, $PPL(X) = P(X_1 X_2 ... X_N)^{-{1 \over N}} = ({1 \over 10} . {1 \over 10} ...)^{-{1 \over N}} = {({1 \over 10})^{N}}^{-{1 \over N}} = 10$. Perplexity ~= Branching Factor = 10 (digits from 0 to 9).
@@ -52,3 +58,6 @@ $SR = (1 - p)^2$ loss function used for backpropagation. Works best on `[1, inf]
 
 ## Surprise
 $Surprise = log({1 \over Probability}) = log(1) - log(Probability)$ Note: the surprise of something with probability 0 is undefined (division by zero, or log(0)).
+
+
+---
