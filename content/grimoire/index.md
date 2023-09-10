@@ -47,6 +47,12 @@ $PPL(X) = P(X_1 X_2 ... X_N)^{-{1 \over N}}$ metric (kinda bad one) to measure t
 ## POS
 Part of speech - Mark each word in a sentence as corresponding to a particular part of speech (such as noun, verb, adjective, etc.).
 
+## RAG
+Retrieval-Augmented Generation (RAG). Add a content store (live internet query / some static DB / ...) and let the LLM query the store as a set of references (and concatenate them to the prompt). It allows to add knowledge without retraining the model, and help with providing sources.
+
+## RLHF
+Reinforcement Learning from Human Feedback (RLHF). (1) Generate some outputs. (2) Humans label (score) them. (3) Train a second model on these labels. (4) Use this new model as scoring for RL.
+
 ## ROUGE
 Metric for text summarization based on (summerized vs reference) N-grams comparison.
 
@@ -61,3 +67,4 @@ $Surprise = log({1 \over Probability}) = log(1) - log(Probability)$ Note: the su
 
 
 ---
+
