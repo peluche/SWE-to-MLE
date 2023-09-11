@@ -10,6 +10,10 @@ math:
   enable: true
 ---
 
+## Alignment
+Is related to AGI. It's about "building a __nice__ AI". Quoting George Hotz it's also about making 
+a "do what I __mean__ machine" as opposed to a what I said machine. When discussed people tend to use `Utility function` as our model for influencing AI's behavior. It's a very hard problem, currently unsolved problem, possibly unsolvable problem? This is a subjet causing a lot of anguish. How to avoid the `Roko's basilisk` and the `paperclip maximizer` doom. Anecdotally, humans are not aligned (within natural selection) with our "inclusive genetic fitness" because we use contraceptives which goes against what "natural selection would want us to do". The most vocal advocate for alignment over the years has been Eliezer Yudkowsky [yt](https://youtu.be/EUjc1WuyPT8).
+
 ## Argmax
 Set the largest value to `1` and everything else to `0`. This is convenient to make a decision, but has a terrible derivative for backpropagation (see. [softmax](#softmax)).
 
@@ -18,6 +22,9 @@ Metric for machine translation based on (translated vs reference) N-gram compari
 
 ## Cross Entropy 
 $CE(X) = -\sum_{X=1}^{M}{observed_{X} \times log(predicted_{X})}$ but in practice observed is a vector of [0]s with a single [1], so it simplify to $CE(X) = -log(predicted_{X})$. It's used to compute the loss of a [softmax](#softmax) (because it provides steeper gradient in the `[0, 1]` range than the [squared residual](#squared-residual)).
+
+## e/acc
+Effective accelerationism is a (satirical?) movement on the opposite side of the [alignment](#alignment) doomer crowd. It argues for a set of several super human AGI forming a stalemate equilibrium that would let human reap benefits of AI while not being endengered by it. [yt](https://youtu.be/4xvvenRLtY0).
 
 ## Entropy
 $Entropy = \sum_{i} { Probability_i . Surprise_i} = \sum {p(x)log({1 \over p(x)})} = - \sum {p(x)log(p(x))}$. See [Surprise](#surprise). See [yt](https://youtu.be/YtebGVx-Fxw).
@@ -33,6 +40,9 @@ LOGistic unIT. Some raw value converted into a proba (see [softmax](#softmax)). 
 
 ## LoRA
 Low Rank Adaptation (LoRA) is a [PEFT](#peft). It's used to fine tune a large model while only touching a minimal amount of weights. In practice it emulates a `[N, M]` matrice, by using two `[N, k] @ [k, M]` matricies as a proxy. The insight is that matrices information is sparse and similar results can be used with fewer dimentions, it's a form of dimention reduction.
+
+## Mechanistic Interpretability
+It's reverse engineering NN. Understand how AI works internally. How does it "think". Probing individual neurons. How does it compute features from earlier features.
 
 ## NER
 Named entity recognition -
@@ -51,7 +61,7 @@ Part of speech - Mark each word in a sentence as corresponding to a particular p
 Retrieval-Augmented Generation (RAG). Add a content store (live internet query / some static DB / ...) and let the LLM query the store as a set of references (and concatenate them to the prompt). It allows to add knowledge without retraining the model, and help with providing sources.
 
 ## RLHF
-Reinforcement Learning from Human Feedback (RLHF). (1) Generate some outputs. (2) Humans label (score) them. (3) Train a second model on these labels. (4) Use this new model as scoring for RL.
+Reinforcement Learning from Human Feedback (RLHF). (1) Generate some outputs. (2) Humans label (score) them. (3) Train a second model on these labels. (4) Use this new model as scoring for RL. Intuition: The LLM learn the distribution of outcome, and RL focus the answer on specific groups of proba (narrowing the creativity/diversity by enforcing specific outcomes. aka. biaising the model toward human preference). [yt](https://youtu.be/PBH2nImUM5c).
 
 ## ROUGE
 Metric for text summarization based on (summerized vs reference) N-grams comparison.
@@ -67,4 +77,3 @@ $Surprise = log({1 \over Probability}) = log(1) - log(Probability)$ Note: the su
 
 
 ---
-
