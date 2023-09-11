@@ -41,8 +41,8 @@ LOGistic unIT. Some raw value converted into a proba (see [softmax](#softmax)). 
 ## LoRA
 Low Rank Adaptation (LoRA) is a [PEFT](#peft). It's used to fine tune a large model while only touching a minimal amount of weights. In practice it emulates a `[N, M]` matrice, by using two `[N, k] @ [k, M]` matricies as a proxy. The insight is that matrices information is sparse and similar results can be used with fewer dimentions, it's a form of dimention reduction.
 
-## Mechanistic Interpretability
-It's reverse engineering NN. Understand how AI works internally. How does it "think". Probing individual neurons. How does it compute features from earlier features.
+## MI
+Mechanistic Interpretability (MI) is reverse engineering NN. Understand how AI works internally. How does it "think". Probing individual neurons. How does it compute features from earlier features.
 
 ## NER
 Named entity recognition -
