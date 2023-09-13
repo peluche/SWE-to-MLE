@@ -5,7 +5,7 @@ draft: false
 author: "peluche"
 authorLink: "https://github.com/peluche"
 description: "Makemore Implement a Bigram Character-level Language Model"
-tags: ['LM', 'backpropagation', 'gradient', 'neuron', 'python', 'pytorch', 'jupyter', 'Andrej Karpathy']
+tags: ['NLP', 'LM', 'backpropagation', 'gradient', 'neuron', 'python', 'pytorch', 'jupyter', 'Andrej Karpathy']
 categories: ['learning']
 ---
 
