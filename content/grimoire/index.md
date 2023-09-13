@@ -23,6 +23,9 @@ Metric for machine translation based on (translated vs reference) N-gram compari
 ## Cross Entropy 
 $CE(X) = -\sum_{X=1}^{M}{observed_{X} \times log(predicted_{X})}$ but in practice observed is a vector of [0]s with a single [1], so it simplify to $CE(X) = -log(predicted_{X})$. It's used to compute the loss of a [softmax](#softmax) (because it provides steeper gradient in the `[0, 1]` range than the [squared residual](#squared-residual)).
 
+## Curse of Dimensionality
+(Told ya the Grimoire would have curse and hexes in it!). It means that algorithms working for small examples become impractical on real world examples because they grow exponentially with input size. In CS it often means that runtime become unmanageable. In ML it sometimes also means that we would need exponential amount of data fot the model to learn.
+
 ## e/acc
 Effective accelerationism is a (satirical?) movement on the opposite side of the [alignment](#alignment) doomer crowd. It argues for a set of several super human AGI forming a stalemate equilibrium that would let human reap benefits of AI while not being endengered by it. [yt](https://youtu.be/4xvvenRLtY0).
 
