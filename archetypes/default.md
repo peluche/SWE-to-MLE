@@ -4,8 +4,13 @@ date: {{ .Date }}
 draft: false
 author: "peluche"
 authorLink: "https://github.com/peluche"
-description: ""
+description: "{{ replace .Name "-" " " | title }}"
 tags: []
 categories: []
+resources:
+- name: "foo"
+  src: "foo.png"
+math:
+  enable: true
 ---
 
