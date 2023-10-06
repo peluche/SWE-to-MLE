@@ -117,4 +117,4 @@ The maze's walls were full of obscure writings, forbidden knowledge on this arca
 - https://ai.stackexchange.com/questions/35184/how-do-i-design-the-network-for-deep-q-network
 - https://web.stanford.edu/class/cs234/CS234Win2019/slides/lnotes6.pdf
 
-And a special thanks to [https://github.com/changlinli](github.com/changlinli) and his awesome set of lectures at the [Recurse Center](https://www.recurse.com/scout/click?t=dcdcd5fced9bfab4a02b4dd6bb05199e) for inspiring me to work on this.
+And a special thanks to [https://github.com/changlinli](https://github.com/changlinli) and his awesome set of lectures at the [Recurse Center](https://www.recurse.com/scout/click?t=dcdcd5fced9bfab4a02b4dd6bb05199e) for inspiring me to work on this.
