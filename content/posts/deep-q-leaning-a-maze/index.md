@@ -23,7 +23,7 @@ Adding a new entry to the bestiary, the Minotaur.
 ![minotaur](minotaur.png 'Minotaur by stable diffusion')
 
 ## The Quest
-As a first step toward Reinforcement Learning (RL) let's write a maze solver using Deep Q-Learning (DQN).
+As a first step toward Reinforcement Learning (RL) let's write a maze solver using Deep Q-Network (DQN).
 
 ## Bellman's Equation
 To me DQN seems to be the RL technique requiring the least effort. All you need to do is to balance the left side of the Bellman's equation with its right side:
