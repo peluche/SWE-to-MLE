@@ -16,6 +16,8 @@ resources:
   src: "manual.png"
 - name: "malicious"
   src: "malicious.png"
+- name: "malicious2"
+  src: "malicious2.png"
 - name: "dream"
   src: "dream.png"
 ---
@@ -111,6 +113,10 @@ malicious_teapot = morph(teapot)
 ```
 
 ![malicious](malicious.png "Malicious teapot")
+
+Our magestic mimic:
+
+![malicious2](malicious2.png "Mimic teapot")
 
 ## Dreaming of Chihuahua
 Now let's crank it up to 11, how would the image change if we made the network overfit the picture on the chihuahua label.
