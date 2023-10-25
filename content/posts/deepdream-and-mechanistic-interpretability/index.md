@@ -8,8 +8,26 @@ description: "Deepdream and Mechanistic Interpretability"
 tags: ['deepdream', 'mechanistic interpretability', 'VGG19', 'CNN', 'image classifier', 'imagenet-1k', 'beholder']
 categories: ['bestiary']
 resources:
-- name: "foo"
-  src: "foo.png"
+- name: "beholder"
+  src: "beholder.png"
+- name: "sky-all-layers"
+  src: "sky-all-layers.png"
+- name: "sky-special"
+  src: "sky-special.png"
+- name: "dog-deeper"
+  src: "dog-deeper.png"
+- name: "dog-layers"
+  src: "dog-layers.png"
+- name: "vangogh-layers"
+  src: "vangogh-layers.png"
+- name: "void-layers"
+  src: "void-layers.png"
+- name: "kelpie-features"
+  src: "kelpie-features.png"
+- name: "blind-kelpies"
+  src: "blind-kelpies.png"
+- name: "blind-controls"
+  src: "blind-controls.png"
 ---
 
 *A Beholder awakens. Its myriad eyes, each a facet of mechanistic insight, gaze upon the intricate layers of information, revealing hidden patterns in the dreams of code. In the tapestry of deepdream, the Beholder becomes the guardian of interpretability, its central eye illuminating the enigmatic connections woven within the digital labyrinth.*
