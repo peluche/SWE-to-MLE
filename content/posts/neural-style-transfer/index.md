@@ -52,7 +52,7 @@ def hooked(model):
 ```
 
 ### Extract the content: Image Compression
-The first step is to extract the features that are relevent to the content image. This could also be reframed as a compression problem. Can we take the activation values from an inner layer of the network and use then to reconstruct the original image.
+The first step is to extract the features that are relevent to the content image. This could also be reframed as a compression problem. Can we take the activation values from an inner layer of the network and use them to reconstruct the original image.
 
 ```python
 def apply_content(start, content, layer=content_layer, epochs=10, m=vgg_hooked, mem=vgg_mem):
@@ -83,7 +83,7 @@ def apply_content(start, content, layer=content_layer, epochs=10, m=vgg_hooked, 
 The earlier layers are fairly big and it's easy to reconstruct a good version of the original image, but later ones are much smaller and a lot of the details are lost. "Creating progressively noisier and noisier images.
 
 ### Extract the style: Gram matrix
-For the style we do not want to recreate the original image. We only care about its essense. We care about how features relate to each other. And for that we compute the `Gram matrix` (aka. covariance, aka. correlation) between the channels at a given layer.
+For the style we do not want to recreate the original image. We only care about its essence. We care about how features relate to each other. And for that we compute the `Gram matrix` (aka. covariance, aka. correlation) between the channels at a given layer.
 
 The idea is to capture the relation between features of a painting. For example the yellow stars and moon are correlated with convex radiant shapes, while the blue are swirly spirals, and the vegetation is weavy.
 
@@ -127,12 +127,12 @@ def apply_style(start, style, layers=style_layers, epochs=10, m=vgg_hooked, mem=
     return start
 ```
 
-Let's have a look at some style extractions from Vangogh's Stary Night painting applied to a dog picture.
+Let's have a look at some style extractions from Van Gogh's Stary Night painting applied to a dog picture.
 
 ![style-extraction](style-extraction.png "Style extraction from starry night to a dog")
 
 ### Putting it together
-Now we can mix both the re-construction of the content, and the essense of the style together. Also known as neural style transfer.
+Now we can mix both the re-construction of the content, and the essence of the style together. Also known as neural style transfer.
 
 ```python
 style_layers = [1, 6, 11, 20, 29]
