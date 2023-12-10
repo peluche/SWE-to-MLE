@@ -80,11 +80,11 @@ Using a causal mask with a decoder-only autoregressive transformer would be equi
 And the problem here is that the first 4 pairs are not possible to guess. There is equal probability (10%) to chose the correct next token. Once the `<copy>` token appear in the input the output becomes totally inferable. But before that it's a coin toss. So decoder-only are not a good fit.
 
 ## Sinusoidal
-The first positional encoding proposed in the Attention Is All You Need paper is Sinusoidal. It consist of taking a bunch of offsets on a set of `sin()` and `cos()` waves with increasing frequencies as a representation of the position of a given word.
+The first positional encoding proposed in the Attention Is All You Need paper is Sinusoidal. It consists of taking a bunch of offsets on a set of `sin()` and `cos()` waves with increasing frequencies as a representation of the position of a given word.
 
 Intuitively it bothers me. I have the sentiment that it creates a failure mode where the network just "duplicate" tokens. Where token `1` at offset 0 is a different token from `1` at offset 1 or 2 ..., conceptually duplicating the vocabulary for each possible offset in the context window.
 
-*But Eldron's manuscripts are littered with references to it, so let's cast the spell to get a better feel of it.*
+*But Eldron's manuscripts are littered with references to it, so let's cast the spell to get a better feel for it.*
 
 ```python
 def get_sinusoidal_positional_encoding(context_size=CONTEXT_SIZE, embed_size=EMBED_SIZE):
@@ -266,7 +266,7 @@ class MultiheadAttention(nn.Module):
 ```
 
 ## Compare Schemes Accuracies
-On the toy task for a sample of 5 runs each we have:
+On the toy task for a sample of 5 runs each, we have:
 
 ![results](results.png "Positional Encoding Schemes Accuracies on the toy copy-task")
 
@@ -277,7 +277,7 @@ I couldn't get ALiBi to produce good results on my task. This could be due to:
 
 I was advised to use a Causal mask in combination with ALiBi which helped a lot but didn't place it on a par with the other three.
 
-I also experimented with using only powers of 2 number of multi-headed attention but it didn't close the gap with other schemes.
+I also experimented with using only powers of 2 number of multi-headed attention but it didn't close the gap with other schemes either.
 
 ## Attention Activation
 Looking at the attention activations for an example is pretty cool :)
