@@ -82,8 +82,12 @@ theme = 'loveit'
 			typeit = false
 
 	[params.footer]
-    enable = true
-		since = 2023
+	    enable = true
+	    hugo = false
+	    copyright = true
+	    since = 2023
+	    custom = '<a href="https://www.recurse.com/scout/click?t=dcdcd5fced9bfab4a02b4dd6bb05199e"><img width="30px" src="/rc.svg"></img></a>'
+	    
 
   [params.section]
     paginate = 20
