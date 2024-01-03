@@ -29,6 +29,9 @@ $CE(X) = -\sum_{X=1}^{M}{observed_{X} \times log(predicted_{X})}$ but in practic
 ## e/acc
 Effective accelerationism is a (satirical?) movement on the opposite side of the [alignment](#alignment) doomer crowd. It argues for a set of several super human AGI forming a stalemate equilibrium that would let human reap benefits of AI while not being endengered by it. [yt](https://youtu.be/4xvvenRLtY0).
 
+## Eigenvector / Eigenvalue
+Eigenvector is a vector that does not change direction for a given transformation (change of basis). The Eigenvalue is the magnitude of the vector after the transformation (e.g. 1 unchanged, 2 doubled in size, -1 reversed direction). Note: for a given change of basis there can only be at most `matrix rank` Eigenvectors so a 2x2 matrix can have 0, 1, or 2 Eigenvectors.
+
 ## Entropy
 $Entropy = \sum_{i} { Probability_i . Surprise_i} = \sum {p(x)log({1 \over p(x)})} = - \sum {p(x)log(p(x))}$. See [Surprise](#surprise). See [yt](https://youtu.be/YtebGVx-Fxw). see [yt](https://youtu.be/ErfnhcEV1O8?t=144)
 
