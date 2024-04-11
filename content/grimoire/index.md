@@ -18,7 +18,7 @@ a "do what I __mean__ machine" as opposed to a what I said machine. When discuss
 Set the largest value to `1` and everything else to `0`. This is convenient to make a decision, but has a terrible derivative for backpropagation (see. [softmax](#softmax)).
 
 ## Binomial Distribution
-$pre(x|n,p) = (\frac{n!}{x!(n-x)!})p^x(1-p)^{n-x}$ where $(\frac{n!}{x!(n-x)!})$ is "n choose k" (nCk).See [yt](https://youtu.be/J8jNoF-K8E8)
+$pre(x|n,p) = (\frac{n!}{x!(n-x)!})p^x(1-p)^{n-x}$ where $(\frac{n!}{x!(n-x)!})$ is "n choose k" (nCk). See [yt](https://youtu.be/J8jNoF-K8E8) [yt](https://youtu.be/8idr1WZ1A7Q).
 
 ## BLEU
 Metric for machine translation based on (translated vs reference) N-gram comparison.
@@ -36,7 +36,7 @@ Effective accelerationism is a (satirical?) movement on the opposite side of the
 Eigenvector is a vector that does not change direction for a given transformation (change of basis). The Eigenvalue is the magnitude of the vector after the transformation (e.g. 1 unchanged, 2 doubled in size, -1 reversed direction). Note: for a given change of basis there can only be at most `matrix rank` Eigenvectors so a 2x2 matrix can have 0, 1, or 2 Eigenvectors.
 
 ## Entropy
-$Entropy = \sum_{i} { Probability_i . Surprise_i} = \sum {p(x)log({1 \over p(x)})} = - \sum {p(x)log(p(x))}$. See [Surprise](#surprise). See [yt](https://youtu.be/YtebGVx-Fxw). see [yt](https://youtu.be/ErfnhcEV1O8?t=144)
+$Entropy = \sum_{i} { Probability_i . Surprise_i} = \sum {p(x)log({1 \over p(x)})} = - \sum {p(x)log(p(x))}$. See [Surprise](#surprise) [yt](https://youtu.be/YtebGVx-Fxw) [yt](https://youtu.be/ErfnhcEV1O8?t=144)
 
 ## Geometric Mean
 $(\prod_i^n x_i)^{1 \over n} = \sqrt[n]{\prod_i^n x_i}$. Used to compute the mean change of a multiplicative sequence (e.g. given 100€, year 1 gets 10% increase, year 2 gets 10% decrease, now the toral is 99€ because $\sqrt[2]{1.1 * 0.9} = 0.995$ and $100€ * 0.995 * 0.995 = 0.99$ the mean interrest rate was a decrease of 0.5%). [yt](https://youtu.be/bEUbfBlZDmo).
@@ -58,7 +58,7 @@ Named entity recognition -
 Mark each word in a sentence as corresponding to a particular entity (such as persons, locations, or organizations, etc.) or "no entity".
 
 ## P-value
-$\text{p-value} = P(event) \sum{P({events\\_as\\_likely})} + \sum{P(events\\_less\\_likely)}$. The p-value is used to mesure if something is special / out of the ordinary, a common threshold is 0.05 (aka. 5%). Another way to think, the p-value is used for "Hypothesis testing" (aka. how confident are we that 2 things are different) to test the "Null hypothesis" (aka. 2 things are the same) a p-value of 0 == totally different, 1 == exacly the same. See [yt](https://youtu.be/vemZtEM63GY). See [yt](https://youtu.be/JQc3yx0-Q9E).
+$\text{p-value} = P(event) \sum{P({events\\_as\\_likely})} + \sum{P(events\\_less\\_likely)}$. The p-value is used to mesure if something is special / out of the ordinary, a common threshold is 0.05 (aka. 5%). Another way to think, the p-value is used for "Hypothesis testing" (aka. how confident are we that 2 things are different) to test the "Null hypothesis" (aka. 2 things are the same) a p-value of 0 == totally different, 1 == exacly the same. See [yt](https://youtu.be/vemZtEM63GY) [yt](https://youtu.be/JQc3yx0-Q9E).
 
 ## PEFT
 Parameter Efficient Fine Tuning (PEFT) is an umbrella term for methods of fine tuning preventing to touch the entirety of the model weights (e.g. [LoRA](#lora)).
