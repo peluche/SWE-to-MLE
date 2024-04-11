@@ -47,6 +47,15 @@ $(\prod_i^n x_i)^{1 \over n} = \sqrt[n]{\prod_i^n x_i}$. Used to compute the mea
 ## Harmonic Mean
 ${n \over \sum {1 \over x}} = ({\sum{1 \over x} \over n})^{-1}$. Used when dealing with rates (e.g. speed (aka. km/h)). E.g. drive half distance at 30km/h then half at 50km/h then my average speed was $({{1 \over 30} + {1 \over 50} \over 2})^{-1} = 37.5$. [[yt]](https://youtu.be/jXKYI7wyqp0).
 
+## L1 Regularization
+Loss penalty term based on the sum of the absolute value of the weights $\sum |weight|$.
+
+## L2 Regularization
+Loss penalty term based on the sum of que squared value of the weights $\sum weight^2$
+
+## Lasso Regression
+See [L1 regularization](#l2-regularization).
+
 ## Logit
 LOGistic unIT. Some raw value converted into a proba (see [softmax](#softmax)). E.g. an image classifier output layer is a vector of logit
 
@@ -74,6 +83,9 @@ Part of speech - Mark each word in a sentence as corresponding to a particular p
 
 ## RAG
 Retrieval-Augmented Generation (RAG). Add a content store (live internet query / some static DB / ...) and let the LLM query the store as a set of references (and concatenate them to the prompt). It allows to add knowledge without retraining the model, and help with providing sources.
+
+## Ridge Regression
+See [L2 regularization](#l2-regularization).
 
 ## RLHF
 Reinforcement Learning from Human Feedback (RLHF). (1) Generate some outputs. (2) Humans label (score) them. (3) Train a second model on these labels. (4) Use this new model as scoring for RL. Intuition: The LLM learn the distribution of outcome, and RL focus the answer on specific groups of proba (narrowing the creativity/diversity by enforcing specific outcomes. aka. biaising the model toward human preference). [[yt]](https://youtu.be/PBH2nImUM5c).
