@@ -17,6 +17,9 @@ a "do what I __mean__ machine" as opposed to a what I said machine. When discuss
 ## Argmax
 Set the largest value to `1` and everything else to `0`. This is convenient to make a decision, but has a terrible derivative for backpropagation (see. [softmax](#softmax)).
 
+## Binomial Distribution
+$pre(x|n,p) = (\frac{n!}{x!(n-x)!})p^x(1-p)^{n-x}$ where $(\frac{n!}{x!(n-x)!})$ is "n choose k" (nCk).See [yt](https://youtu.be/J8jNoF-K8E8)
+
 ## BLEU
 Metric for machine translation based on (translated vs reference) N-gram comparison.
 
