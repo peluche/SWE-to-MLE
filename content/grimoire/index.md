@@ -57,6 +57,9 @@ Mechanistic Interpretability (MI) is reverse engineering NN. Understand how AI w
 Named entity recognition -
 Mark each word in a sentence as corresponding to a particular entity (such as persons, locations, or organizations, etc.) or "no entity".
 
+## P-value
+$\text{p-value} = P(event) \sum{P({events\\_as\\_likely})} + \sum{P(events\\_less\\_likely)}$. The p-value is used to mesure if something is special / out of the ordinary, a common threshold is 0.05 (aka. 5%). Another way to think, the p-value is used for "Hypothesis testing" (aka. how confident are we that 2 things are different) to test the "Null hypothesis" (aka. 2 things are the same) a p-value of 0 == totally different, 1 == exacly the same. See [yt](https://youtu.be/vemZtEM63GY). See [yt](https://youtu.be/JQc3yx0-Q9E).
+
 ## PEFT
 Parameter Efficient Fine Tuning (PEFT) is an umbrella term for methods of fine tuning preventing to touch the entirety of the model weights (e.g. [LoRA](#lora)).
 
