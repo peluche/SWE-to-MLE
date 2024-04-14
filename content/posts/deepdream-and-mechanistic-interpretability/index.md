@@ -5,6 +5,8 @@ draft: false
 author: "peluche"
 authorLink: "https://github.com/peluche"
 description: "Deepdream and Mechanistic Interpretability"
+images:
+- "dog-deeper.png"
 tags: ['deepdream', 'mechanistic interpretability', 'VGG19', 'CNN', 'image classifier', 'imagenet-1k', 'beholder']
 categories: ['bestiary']
 resources:
