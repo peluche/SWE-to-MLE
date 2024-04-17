@@ -15,7 +15,7 @@ Is related to AGI. It's about "building a __nice__ AI". Quoting George Hotz it's
 a "do what I __mean__ machine" as opposed to a what I said machine. When discussed people tend to use `Utility function` as our model for influencing AI's behavior. It's a very hard problem, currently unsolved problem, possibly unsolvable problem? This is a subjet causing a lot of anguish. How to avoid the `Roko's basilisk` and the `paperclip maximizer` doom. Anecdotally, humans are not aligned (within natural selection) with our "inclusive genetic fitness" because we use contraceptives which goes against what "natural selection would want us to do". The most vocal advocate for alignment over the years has been Eliezer Yudkowsky [[yt]](https://youtu.be/EUjc1WuyPT8).
 
 ## Argmax
-Set the largest value to `1` and everything else to `0`. This is convenient to make a decision, but has a terrible derivative for backpropagation (see. [softmax](#softmax)).
+Set the largest value to `1` and everything else to `0`. This is convenient to make a decision, but has a terrible derivative for backpropagation (see. [[softmax]](#softmax)).
 
 ## Bayes Theorem
 $P(H|E) = \frac{P(H) . P(E|H)}{P(E)} = \frac{P(H) . P(E|H)}{P(H).P(E|H) + P(\lnot H).P(E|\lnot H)}$ with $P(H)$ proba hypothesis is true, $P(E|H)$ proba of seeing the evidence if the hypothesis is true, $P(E)$ proba of seeing the evidence, $P(H|E)$ proba a hypothesis is true given some evidence. e.g. the chance someone shy is a librarian instead of a farmer is: $\frac{\\#shy\\_ librarians}{\\#shy\\_ librarians + \\#shy\\_ farmers}$. See [[yt]](https://youtu.be/HZGCoVF3YvM).
@@ -54,10 +54,10 @@ Loss penalty term based on the sum of the absolute value of the weights $\sum |w
 Loss penalty term based on the sum of que squared value of the weights $\sum weight^2$
 
 ## Lasso Regression
-See [L1 regularization](#l2-regularization).
+See [[L1 regularization]](#l2-regularization).
 
 ## Logit
-LOGistic unIT. Some raw value converted into a proba (see [softmax](#softmax)). E.g. an image classifier output layer is a vector of logit
+LOGistic unIT. Some raw value converted into a proba (see [[softmax]](#softmax)). E.g. an image classifier output layer is a vector of logit
 
 ## LoRA
 Low Rank Adaptation (LoRA) is a [PEFT](#peft). It's used to fine tune a large model while only touching a minimal amount of weights. In practice it emulates a `[N, M]` matrice, by using two `[N, k] @ [k, M]` matricies as a proxy. The insight is that matrices information is sparse and similar results can be used with fewer dimentions, it's a form of dimention reduction.
@@ -85,7 +85,7 @@ Part of speech - Mark each word in a sentence as corresponding to a particular p
 Retrieval-Augmented Generation (RAG). Add a content store (live internet query / some static DB / ...) and let the LLM query the store as a set of references (and concatenate them to the prompt). It allows to add knowledge without retraining the model, and help with providing sources.
 
 ## Ridge Regression
-See [L2 regularization](#l2-regularization).
+See [[L2 regularization]](#l2-regularization).
 
 ## RLHF
 Reinforcement Learning from Human Feedback (RLHF). (1) Generate some outputs. (2) Humans label (score) them. (3) Train a second model on these labels. (4) Use this new model as scoring for RL. Intuition: The LLM learn the distribution of outcome, and RL focus the answer on specific groups of proba (narrowing the creativity/diversity by enforcing specific outcomes. aka. biaising the model toward human preference). [[yt]](https://youtu.be/PBH2nImUM5c).
@@ -97,7 +97,7 @@ Metric for text summarization based on (summerized vs reference) N-grams compari
 $softmax(x) = {e^x \over {\sum_i e^i}}$. It normalize raw values into [logit](#logit) (aka. Probabilities summing to 1). The derivative simplify to ${d_{softmax_p} \over d_{raw_p}} = softmax_p . (1 - softmax_p)$. [[yt]](https://youtu.be/KpKog-L9veg).
 
 ## Squared Residual
-$SR = (1 - p)^2$ loss function used for backpropagation. Works best on `[1, inf]`, for `[0, 1]` see [cross entropy](#cross-entropy).
+$SR = (1 - p)^2$ loss function used for backpropagation. Works best on `[1, inf]`, for `[0, 1]` see [[cross entropy]](#cross-entropy).
 
 ## Surprise
 $Surprise = log({1 \over Probability}) = log(1) - log(Probability)$ Note: the surprise of something with probability 0 is undefined (division by zero, or log(0)).
