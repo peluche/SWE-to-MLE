@@ -27,19 +27,19 @@ $pre(x|n,p) = (\frac{n!}{x!(n-x)!})p^x(1-p)^{n-x}$ where $(\frac{n!}{x!(n-x)!})$
 Metric for machine translation based on (translated vs reference) N-gram comparison.
 
 ## Cross Entropy 
-$CE(X) = -\sum_{X=1}^{M}{observed_{X} \times log(predicted_{X})}$ but in practice observed is a vector of [0]s with a single [1], so it simplify to $CE(X) = -log(predicted_{X})$. It's used to compute the loss of a [softmax](#softmax) (because it provides steeper gradient in the `[0, 1]` range than the [squared residual](#squared-residual)).
+$CE(X) = -\sum_{X=1}^{M}{observed_{X} \times log(predicted_{X})}$ but in practice observed is a vector of [0]s with a single [1], so it simplify to $CE(X) = -log(predicted_{X})$. It's used to compute the loss of a [[softmax]](#softmax) (because it provides steeper gradient in the `[0, 1]` range than the [[squared residual]](#squared-residual)).
 
 ## Curse of Dimensionality
 (Told ya the Grimoire would have curse and hexes in it!). It means that algorithms working for small examples become impractical on real world examples because they grow exponentially with input size. In CS it often means that runtime become unmanageable. In ML it sometimes also means that we would need exponential amount of data fot the model to learn.
 
 ## e/acc
-Effective accelerationism is a (satirical?) movement on the opposite side of the [alignment](#alignment) doomer crowd. It argues for a set of several super human AGI forming a stalemate equilibrium that would let human reap benefits of AI while not being endengered by it. [[yt]](https://youtu.be/4xvvenRLtY0).
+Effective accelerationism is a (satirical?) movement on the opposite side of the [[alignment]](#alignment) doomer crowd. It argues for a set of several super human AGI forming a stalemate equilibrium that would let human reap benefits of AI while not being endengered by it. [[yt]](https://youtu.be/4xvvenRLtY0).
 
 ## Eigenvector / Eigenvalue
 Eigenvector is a vector that does not change direction for a given transformation (change of basis). The Eigenvalue is the magnitude of the vector after the transformation (e.g. 1 unchanged, 2 doubled in size, -1 reversed direction). Note: for a given change of basis there can only be at most `matrix rank` Eigenvectors so a 2x2 matrix can have 0, 1, or 2 Eigenvectors.
 
 ## Entropy
-$Entropy = \sum_{i} { Probability_i . Surprise_i} = \sum {p(x)log({1 \over p(x)})} = - \sum {p(x)log(p(x))}$. See [Surprise](#surprise) [[yt]](https://youtu.be/YtebGVx-Fxw) [[yt]](https://youtu.be/ErfnhcEV1O8?t=144)
+$Entropy = \sum_{i} { Probability_i . Surprise_i} = \sum {p(x)log({1 \over p(x)})} = - \sum {p(x)log(p(x))}$. See [[Surprise]](#surprise) [[yt]](https://youtu.be/YtebGVx-Fxw) [[yt]](https://youtu.be/ErfnhcEV1O8?t=144)
 
 ## Geometric Mean
 $(\prod_i^n x_i)^{1 \over n} = \sqrt[n]{\prod_i^n x_i}$. Used to compute the mean change of a multiplicative sequence (e.g. given 100€, year 1 gets 10% increase, year 2 gets 10% decrease, now the toral is 99€ because $\sqrt[2]{1.1 * 0.9} = 0.995$ and $100€ * 0.995 * 0.995 = 0.99$ the mean interrest rate was a decrease of 0.5%). [[yt]](https://youtu.be/bEUbfBlZDmo).
@@ -60,7 +60,7 @@ See [[L1 regularization]](#l2-regularization).
 LOGistic unIT. Some raw value converted into a proba (see [[softmax]](#softmax)). E.g. an image classifier output layer is a vector of logit
 
 ## LoRA
-Low Rank Adaptation (LoRA) is a [PEFT](#peft). It's used to fine tune a large model while only touching a minimal amount of weights. In practice it emulates a `[N, M]` matrice, by using two `[N, k] @ [k, M]` matricies as a proxy. The insight is that matrices information is sparse and similar results can be used with fewer dimentions, it's a form of dimention reduction.
+Low Rank Adaptation (LoRA) is a [[PEFT]](#peft). It's used to fine tune a large model while only touching a minimal amount of weights. In practice it emulates a `[N, M]` matrice, by using two `[N, k] @ [k, M]` matricies as a proxy. The insight is that matrices information is sparse and similar results can be used with fewer dimentions, it's a form of dimention reduction.
 
 ## MI
 Mechanistic Interpretability (MI) is reverse engineering NN. Understand how AI works internally. How does it "think". Probing individual neurons. How does it compute features from earlier features.
@@ -73,7 +73,7 @@ Mark each word in a sentence as corresponding to a particular entity (such as pe
 $\text{p-value} = P(event) \sum{P({events\\_as\\_likely})} + \sum{P(events\\_less\\_likely)}$. The p-value is used to mesure if something is special / out of the ordinary, a common threshold is 0.05 (aka. 5%). Another way to think, the p-value is used for "Hypothesis testing" (aka. how confident are we that 2 things are different) to test the "Null hypothesis" (aka. 2 things are the same) a p-value of 0 == totally different, 1 == exacly the same. See [[yt]](https://youtu.be/vemZtEM63GY) [[yt]](https://youtu.be/JQc3yx0-Q9E).
 
 ## PEFT
-Parameter Efficient Fine Tuning (PEFT) is an umbrella term for methods of fine tuning preventing to touch the entirety of the model weights (e.g. [LoRA](#lora)).
+Parameter Efficient Fine Tuning (PEFT) is an umbrella term for methods of fine tuning preventing to touch the entirety of the model weights (e.g. [[LoRA]](#lora)).
 
 ## Perplexity
 $PPL(X) = P(X_1 X_2 ... X_N)^{-{1 \over N}}$ metric (kinda bad one) to measure the performance of language model (the lower the value, the better the perf). Perplexity is analog to the branching factor normalized by the length of the sequence. Say we guess a `N` digits number, all digits have equal probability, $PPL(X) = P(X_1 X_2 ... X_N)^{-{1 \over N}} = ({1 \over 10} . {1 \over 10} ...)^{-{1 \over N}} = {({1 \over 10})^{N}}^{-{1 \over N}} = 10$. Perplexity ~= Branching Factor = 10 (digits from 0 to 9).
@@ -94,7 +94,7 @@ Reinforcement Learning from Human Feedback (RLHF). (1) Generate some outputs. (2
 Metric for text summarization based on (summerized vs reference) N-grams comparison.
 
 ## Softmax
-$softmax(x) = {e^x \over {\sum_i e^i}}$. It normalize raw values into [logit](#logit) (aka. Probabilities summing to 1). The derivative simplify to ${d_{softmax_p} \over d_{raw_p}} = softmax_p . (1 - softmax_p)$. [[yt]](https://youtu.be/KpKog-L9veg).
+$softmax(x) = {e^x \over {\sum_i e^i}}$. It normalize raw values into [[logit]](#logit) (aka. Probabilities summing to 1). The derivative simplify to ${d_{softmax_p} \over d_{raw_p}} = softmax_p . (1 - softmax_p)$. [[yt]](https://youtu.be/KpKog-L9veg).
 
 ## Squared Residual
 $SR = (1 - p)^2$ loss function used for backpropagation. Works best on `[1, inf]`, for `[0, 1]` see [[cross entropy]](#cross-entropy).
