@@ -47,6 +47,9 @@ $(\prod_i^n x_i)^{1 \over n} = \sqrt[n]{\prod_i^n x_i}$. Used to compute the mea
 ## Harmonic Mean
 ${n \over \sum {1 \over x}} = ({\sum{1 \over x} \over n})^{-1}$. Used when dealing with rates (e.g. speed (aka. km/h)). E.g. drive half distance at 30km/h then half at 50km/h then my average speed was $({{1 \over 30} + {1 \over 50} \over 2})^{-1} = 37.5$. [[yt]](https://youtu.be/jXKYI7wyqp0).
 
+## KL divergence
+$D_{KL}(P || Q) = \sum{P(x) . log(\frac{P(x)}{Q(x)})}$. KL divergence is a mesure of similarity between 2 distributions. It is not symetrical $D_{KL}(P || Q) \neq D_{KL}(Q || P)$. It's asking how surprise are we to observe a distribution if we think it should be a different one. Or how suboptimal an encoding scheme designed to encode $Q$ would be at encoding $P$ (in that sense it relates to [[entropy]](#entropy)).
+
 ## L1 Regularization
 Loss penalty term based on the sum of the absolute value of the weights $\sum |weight|$.
 
