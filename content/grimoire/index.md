@@ -65,6 +65,9 @@ Low Rank Adaptation (LoRA) is a [[PEFT]](#peft). It's used to fine tune a large 
 ## MI
 Mechanistic Interpretability (MI) is reverse engineering NN. Understand how AI works internally. How does it "think". Probing individual neurons. How does it compute features from earlier features.
 
+## MOE
+Mixture Of Experts (MOE) is a mechanism for dynamically rooting (aka. gating mechanism) queries of different types to different experts. Only a subset of the expert models is active at any given time, which reduces the overall memory usage because the entire set of models isn't loaded or running simultaneously.
+
 ## NER
 Named entity recognition -
 Mark each word in a sentence as corresponding to a particular entity (such as persons, locations, or organizations, etc.) or "no entity".
