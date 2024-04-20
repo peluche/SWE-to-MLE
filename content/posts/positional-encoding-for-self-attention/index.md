@@ -5,6 +5,8 @@ draft: false
 author: "peluche"
 authorLink: "https://github.com/peluche"
 description: "Positional Encoding for Self Attention"
+images:
+- "posts/positional-encoding-for-self-attention/eldron.png"
 tags: ['positional encoding', 'sinusoidal positional encoding', 'learned positional encoding', 'RoPE', 'ALiBi', 'transformer', 'attention', 'encoder', 'decoder', 'copy-task', 'Eldron']
 categories: ['bestiary']
 resources:
