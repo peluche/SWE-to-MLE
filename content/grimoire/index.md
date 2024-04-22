@@ -84,6 +84,9 @@ Parameter Efficient Fine Tuning (PEFT) is an umbrella term for methods of fine t
 ## Perplexity
 $PPL(X) = P(X_1 X_2 ... X_N)^{-{1 \over N}}$ metric (kinda bad one) to measure the performance of language model (the lower the value, the better the perf). Perplexity is analog to the branching factor normalized by the length of the sequence. Say we guess a `N` digits number, all digits have equal probability, $PPL(X) = P(X_1 X_2 ... X_N)^{-{1 \over N}} = ({1 \over 10} . {1 \over 10} ...)^{-{1 \over N}} = {({1 \over 10})^{N}}^{-{1 \over N}} = 10$. Perplexity ~= Branching Factor = 10 (digits from 0 to 9).
 
+## Poisson Distribution
+$P(X=x) = \frac{\mu^{x} e^{-\mu}}{x!}$. It's used to count how many event happen in an interval (of time / space ...) (e.g. how many radioactive decay in 2sec). To be a poisson distribution events must be random and independant (aka. probability doens't change over time, and previous events do not influence future events). It is define on `[0, inf]` (because you can't have negative interval of time / space).
+
 ## POS
 Part of speech - Mark each word in a sentence as corresponding to a particular part of speech (such as noun, verb, adjective, etc.).
 
