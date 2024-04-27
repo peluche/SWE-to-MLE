@@ -121,6 +121,9 @@ theme = 'loveit'
     [params.page.toc]
       enable = true
 
+    [params.page.code]
+      maxShownLines = -1
+      
     [params.page.comment]
       enable = true
       [params.page.comment.utterances]

@@ -5,11 +5,13 @@ draft: false
 author: "peluche"
 authorLink: "https://github.com/peluche"
 description: "Einsum for Tensor Manipulation"
+images:
+- "posts/einsum-for-tensor-manipulation/ioun-stone.png"
 tags: ['einsum', 'einops', 'tensor', 'pytorch']
 categories: ['bestiary']
 resources:
-- name: "foo"
-  src: "foo.png"
+- name: "ioun-stone"
+  src: "ioun-stone.png"
 math:
   enable: true
 ---
