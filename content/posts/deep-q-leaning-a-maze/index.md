@@ -5,6 +5,8 @@ draft: false
 author: "peluche"
 authorLink: "https://github.com/peluche"
 description: "DQN: Deep Q-Leaning a Maze"
+images:
+- "posts/deep-q-leaning-a-maze/minotaur.png"
 tags: ['DQN', 'RL', 'pytorch', 'maze']
 categories: ['bestiary']
 resources:

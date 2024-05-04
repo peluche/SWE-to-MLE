@@ -5,6 +5,8 @@ draft: false
 author: "peluche"
 authorLink: "https://github.com/peluche"
 description: "ViT - Vision Transformer"
+images:
+- "posts/vit-vision-transformer/orb-of-scrying.png"
 tags: ['ViT', 'transformer', 'image', 'MNIST', 'einops', 'orb of scrying']
 categories: ['bestiary']
 resources:

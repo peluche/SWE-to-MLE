@@ -5,6 +5,8 @@ draft: false
 author: "peluche"
 authorLink: "https://github.com/peluche"
 description: "Daedalus Generating Mazes With Autoencoders and Variational Autoencoders"
+images:
+- "posts/daedalus-generating-mazes-with-autoencoders-and-variational-autoencoders/daedalus.png"
 tags: ['autoencoder', 'VAE', 'annealing', 'daedalus', 'image generation', 'maze generation', 'latent space']
 categories: ['bestiary']
 resources:
