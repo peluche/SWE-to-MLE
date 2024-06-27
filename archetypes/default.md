@@ -5,6 +5,8 @@ draft: false
 author: "peluche"
 authorLink: "https://github.com/peluche"
 description: "{{ replace .Name "-" " " | title }}"
+images:
+- "/posts/.../....png"
 tags: []
 categories: []
 resources:
