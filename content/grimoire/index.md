@@ -26,6 +26,9 @@ $pre(x|n,p) = (\frac{n!}{x!(n-x)!})p^x(1-p)^{n-x}$ where $(\frac{n!}{x!(n-x)!})$
 ## BLEU
 Metric for machine translation based on (translated vs reference) N-gram comparison.
 
+## CoT
+Chain of Thought. A way to solve a problem by breaking it down into a sequence of reasoning steps.
+
 ## Cross Entropy 
 $CE(X) = -\sum_{X=1}^{M}{observed_{X} \times log(predicted_{X})}$ but in practice observed is a vector of [0]s with a single [1], so it simplify to $CE(X) = -log(predicted_{X})$. It's used to compute the loss of a [[softmax]](#softmax) (because it provides steeper gradient in the `[0, 1]` range than the [[squared residual]](#squared-residual)).
 
