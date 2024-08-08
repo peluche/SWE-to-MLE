@@ -111,6 +111,9 @@ $softmax(x) = {e^x \over {\sum_i e^i}}$. It normalize raw values into [[logit]](
 ## Squared Residual
 $SR = (1 - p)^2$ loss function used for backpropagation. Works best on `[1, inf]`, for `[0, 1]` see [[cross entropy]](#cross-entropy).
 
+## STE
+Straight-Through Estimator. A way to pass gradients through a non-differentiable function (often used with Quantization).
+
 ## Surprise
 $Surprise = log({1 \over Probability}) = log(1) - log(Probability)$ Note: the surprise of something with probability 0 is undefined (division by zero, or log(0)).
 
