@@ -41,6 +41,9 @@ Effective accelerationism is a (satirical?) movement on the opposite side of the
 ## Eigenvector / Eigenvalue
 Eigenvector is a vector that does not change direction for a given transformation (change of basis). The Eigenvalue is the magnitude of the vector after the transformation (e.g. 1 unchanged, 2 doubled in size, -1 reversed direction). Note: for a given change of basis there can only be at most `matrix rank` Eigenvectors so a 2x2 matrix can have 0, 1, or 2 Eigenvectors.
 
+## EMA
+Exponential Moving Average. A streaming way to compute the moving average of a sequence of numbers by giving more weight to recent values. $EMA(t) = discount * val_t + (1 - discount) * EMA(t-1)$.
+
 ## Entropy
 $Entropy = \sum_{i} { Probability_i . Surprise_i} = \sum {p(x)log({1 \over p(x)})} = - \sum {p(x)log(p(x))}$. See [[Surprise]](#surprise) [[yt]](https://youtu.be/YtebGVx-Fxw) [[yt]](https://youtu.be/ErfnhcEV1O8?t=144)
 
