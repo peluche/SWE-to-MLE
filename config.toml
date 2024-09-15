@@ -60,6 +60,14 @@ theme = 'loveit'
     title = "Deck of Many Prompts"
   [[menu.main]]
     weight = 7
+    identifier = "x-twitter"
+    pre = "<i class='fab fa-twitter fa-fw' aria-hidden='true'></i>"
+    post = ""
+    name = ""
+    url = "https://x.com/peluchewastaken"
+    title = ""
+  [[menu.main]]
+    weight = 8
     identifier = "github"
     pre = "<i class='fab fa-github fa-fw' aria-hidden='true'></i>"
     post = ""
