@@ -52,12 +52,12 @@ theme = 'loveit'
     title = ""
   [[menu.main]]
     weight = 6
-    identifier = "grimoire"
+    identifier = "deck"
     pre = "<i class='fas fa-book-skull fa-fw' aria-hidden='true'></i>"
     post = ""
-    name = "Grimoire"
-    url = "/grimoire/"
-    title = "Grimoire"
+    name = "Deck"
+    url = "https://deckofmanyprompts.com/"
+    title = "Deck of Many Prompts"
   [[menu.main]]
     weight = 7
     identifier = "github"
