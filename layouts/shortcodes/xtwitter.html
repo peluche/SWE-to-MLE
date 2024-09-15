@@ -1,0 +1,4 @@
+{{- $url := .Get 0 -}}
+{{- $embedUrl := printf "https://publish.twitter.com/oembed?url=%s" $url -}}
+{{- $embed := getJSON $embedUrl -}}
+{{ $embed.html | safeHTML }}
